@@ -15,7 +15,7 @@ const Footer = () => {
         
         {/* Judul */}
         <h1 className="text-2xl font-bold order-1 md:order-none">
-          Portofolio
+          My social media
         </h1>
 
         {/* Ikon Sosmed */}

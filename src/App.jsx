@@ -2,8 +2,6 @@ import { useRef, useState, useEffect } from "react";
 import ProfileCard from "./components/ProfileCard/ProfileCard";
 import ShinyText from "./components/ShinyText/ShinyText";
 import BlurText from "./components/BlurText/BlurText";
-import ScrambledText from "./components/ScrambledText/ScrambledText";
-import SplitText from "./components/SplitText/SplitText";
 import Lanyard from "./components/Lanyard/Lanyard";
 import GlassIcons from "./components/GlassIcons/GlassIcons";
 import { listTools, listProyek } from "./data";
@@ -81,14 +79,12 @@ function App() {
             <h1 className="text-5xl font-bold mb-6">
               <ShinyText text="Hallo Saya Nazril Abizar" disabled={false} speed={3} className='custom-class' />
             </h1>
-            <BlurText
-              text="Seorang seniman, desainer, sekaligus ilustrator yang tidak hanya menciptakan desain — tetapi keindahan.
-Aku tidak sekadar membuat visual; aku merancang rasa, membangun atmosfer, dan menghadirkan pengalaman estetika yang bisa dirasakan. Setiap karya adalah perjalanan, setiap detail membawa makna, dan setiap goresan menjadi narasi yang ingin tinggal lebih lama dalam ingatan mereka yang melihatnya."
-              delay={150}
-              animateBy="words"
-              direction="top"
-              className=" mb-6"
-            />
+            <p className="mb-6">
+  Seorang seniman, desainer, sekaligus ilustrator yang tidak hanya menciptakan desain — tetapi keindahan. 
+  Aku tidak sekadar membuat visual; aku merancang rasa, membangun atmosfer, dan menghadirkan pengalaman estetika yang bisa dirasakan. 
+  Setiap karya adalah perjalanan, setiap detail membawa makna, dan setiap goresan menjadi narasi yang ingin tinggal lebih lama dalam ingatan mereka yang melihatnya.
+</p>
+
             <div className="flex items-center sm:gap-4 gap-2">
               <a 
                 href="./assets/portofolio.pdf" 
@@ -143,13 +139,15 @@ Aku tidak sekadar membuat visual; aku merancang rasa, membangun atmosfer, dan me
 
         {/* SCROLL AREA */}
         <div className="max-h-[250px] overflow-y-auto pr-2 md:max-h-none md:overflow-visible">
-          <BlurText
-            text="Halo! Aku Nazril Abizar, seorang desainer grafis dan ilustrator yang fokus menciptakan visual yang punya rasa dan cerita. Aku mahir dalam desain grafis, UI/UX, ilustrasi, serta sedikit memahami pemrograman. Saat ini aku masih seorang siswa kelas 3 SMK Bina Sejahtera 1 Kota Bogor, jurusan Desain Komunikasi Visual. Selain desain dan ilustrasi, aku juga cukup kuat dalam public speaking dan komunikasi. Software yang kugunakan meliputi Photoshop, Illustrator, CorelDraw, Canva, dan Ibis Paint untuk ilustrasi. Terima kasih sudah mampir—semoga kita bisa berkolaborasi dan menciptakan sesuatu yang bermakna."
-            delay={150}
-            animateBy="words"
-            direction="top"
-            className="text-base md:text-lg leading-relaxed mb-10 text-gray-300"
-          />
+          <p className="text-base md:text-lg leading-relaxed mb-10 text-gray-300">
+  Halo! Aku Nazril Abizar, seorang desainer grafis dan ilustrator yang fokus menciptakan visual yang punya rasa dan cerita. 
+  Aku mahir dalam desain grafis, UI/UX, ilustrasi, serta sedikit memahami pemrograman. 
+  Saat ini aku masih seorang siswa kelas 3 SMK Bina Sejahtera 1 Kota Bogor, jurusan Desain Komunikasi Visual. 
+  Selain desain dan ilustrasi, aku juga cukup kuat dalam public speaking dan komunikasi. 
+  Software yang kugunakan meliputi Photoshop, Illustrator, CorelDraw, Canva, dan Ibis Paint untuk ilustrasi. 
+  Terima kasih sudah mampir—semoga kita bisa berkolaborasi dan menciptakan sesuatu yang bermakna.
+</p>
+
         </div>
 
         <div className="flex flex-col sm:flex-row items-center sm:justify-between text-center sm:text-left gap-y-8 sm:gap-y-0 mb-4 w-full">
@@ -205,24 +203,47 @@ Aku tidak sekadar membuat visual; aku merancang rasa, membangun atmosfer, dan me
         </div>
         {/* tentang */}
 
-        {/* Proyek */}
-        <div className="proyek mt-32 py-10" id="project" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
-        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Project</h1>
-        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Showcasing a selection of projects that reflect my skills, creativity, and passion for building meaningful digital experiences.</p>
-        <div className="proyek-box mt-14" >
+{/* Proyek */}
+<div id="project" className="proyek mt-32 py-10"></div>
 
-          <div style={{ height: 'auto', position: 'relative' }} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" >
-            <ChromaGrid
-              items={listProyek}
-              onItemClick={handleProjectClick} // Kirim fungsi untuk handle klik
-              radius={500}
-              damping={0.45}
-              fadeOut={0.6}
-              ease="power3.out"
-            />
-          </div>
-        </div>
-        {/* Proyek */}
+<h1 className="text-center text-4xl font-bold mb-2">
+  Project
+</h1>
+
+<p className="text-base/loose text-center opacity-50 max-w-2xl mx-auto">
+  Showcasing a selection of projects that reflect my skills, creativity, and passion for building meaningful digital experiences.
+</p>
+
+{/* GRID PROJECT - RINGAN */}
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-14">
+  {listProyek.map((item) => (
+    <div
+      key={item.id}
+      className="
+        border border-white/10 p-4 rounded-xl cursor-pointer
+        bg-gradient-to-br from-[#1d4ed8]/40 via-[#1e40af]/30 to-[#000]/90
+        hover:border-white/20 hover:scale-[1.02] transition-all duration-300
+      "
+      onClick={() => handleProjectClick(item)}
+    >
+      <img
+        src={item.image}
+        alt={item.title}
+        className="w-full h-56 object-cover rounded-lg"
+      />
+
+      <h2 className="text-white font-semibold text-lg mt-4">
+        {item.title}
+      </h2>
+
+      <p className="text-gray-300 text-sm mt-1">
+        {item.subtitle}
+      </p>
+    </div>
+  ))}
+</div>
+
+
 
 
         {/* Kontak */}
