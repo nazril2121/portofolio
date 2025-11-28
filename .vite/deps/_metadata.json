@@ -1,0 +1,151 @@
+{
+  "hash": "53fe1f8d",
+  "configHash": "082b5792",
+  "lockfileHash": "018cffd3",
+  "browserHash": "2e296031",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "017b81eb",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "c07cb462",
+      "needsInterop": true
+    },
+    "aos": {
+      "src": "../../node_modules/aos/dist/aos.esm.js",
+      "file": "aos.js",
+      "fileHash": "ece89309",
+      "needsInterop": false
+    },
+    "react-icons/vsc": {
+      "src": "../../node_modules/react-icons/vsc/index.mjs",
+      "file": "react-icons_vsc.js",
+      "fileHash": "0415b219",
+      "needsInterop": false
+    },
+    "motion/react": {
+      "src": "../../node_modules/motion/dist/es/react.mjs",
+      "file": "motion_react.js",
+      "fileHash": "9c648315",
+      "needsInterop": false
+    },
+    "firebase/firestore": {
+      "src": "../../node_modules/firebase/firestore/dist/esm/index.esm.js",
+      "file": "firebase_firestore.js",
+      "fileHash": "cb893a5c",
+      "needsInterop": false
+    },
+    "firebase/app": {
+      "src": "../../node_modules/firebase/app/dist/esm/index.esm.js",
+      "file": "firebase_app.js",
+      "fileHash": "39df75e0",
+      "needsInterop": false
+    },
+    "firebase/auth": {
+      "src": "../../node_modules/firebase/auth/dist/esm/index.esm.js",
+      "file": "firebase_auth.js",
+      "fileHash": "ed7d6dde",
+      "needsInterop": false
+    },
+    "ogl": {
+      "src": "../../node_modules/ogl/src/index.js",
+      "file": "ogl.js",
+      "fileHash": "5c2ef932",
+      "needsInterop": false
+    },
+    "react-icons/fi": {
+      "src": "../../node_modules/react-icons/fi/index.mjs",
+      "file": "react-icons_fi.js",
+      "fileHash": "0c0c4493",
+      "needsInterop": false
+    },
+    "react-icons/fa": {
+      "src": "../../node_modules/react-icons/fa/index.mjs",
+      "file": "react-icons_fa.js",
+      "fileHash": "1625ec56",
+      "needsInterop": false
+    },
+    "@react-three/fiber": {
+      "src": "../../node_modules/@react-three/fiber/dist/react-three-fiber.esm.js",
+      "file": "@react-three_fiber.js",
+      "fileHash": "13c9dcd0",
+      "needsInterop": false
+    },
+    "@react-three/drei": {
+      "src": "../../node_modules/@react-three/drei/index.js",
+      "file": "@react-three_drei.js",
+      "fileHash": "31c3c249",
+      "needsInterop": false
+    },
+    "@react-three/rapier": {
+      "src": "../../node_modules/@react-three/rapier/dist/react-three-rapier.esm.js",
+      "file": "@react-three_rapier.js",
+      "fileHash": "71e5129c",
+      "needsInterop": false
+    },
+    "meshline": {
+      "src": "../../node_modules/meshline/dist/index.js",
+      "file": "meshline.js",
+      "fileHash": "b8e1b613",
+      "needsInterop": false
+    },
+    "three": {
+      "src": "../../node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "6a440dc7",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "hls-PEXT2VWW": {
+      "file": "hls-PEXT2VWW.js"
+    },
+    "vision_bundle-CSEDTL2H": {
+      "file": "vision_bundle-CSEDTL2H.js"
+    },
+    "rapier.es-DNRMF5DS": {
+      "file": "rapier__es-DNRMF5DS.js"
+    },
+    "chunk-JF6Q5ANL": {
+      "file": "chunk-JF6Q5ANL.js"
+    },
+    "chunk-XODHDMH7": {
+      "file": "chunk-XODHDMH7.js"
+    },
+    "chunk-36T7BQQ7": {
+      "file": "chunk-36T7BQQ7.js"
+    },
+    "chunk-FQBCVIR4": {
+      "file": "chunk-FQBCVIR4.js"
+    },
+    "chunk-ATWJA37P": {
+      "file": "chunk-ATWJA37P.js"
+    },
+    "chunk-TRC4C6OE": {
+      "file": "chunk-TRC4C6OE.js"
+    },
+    "chunk-IOSSJVVB": {
+      "file": "chunk-IOSSJVVB.js"
+    },
+    "chunk-EO7JTZSA": {
+      "file": "chunk-EO7JTZSA.js"
+    },
+    "chunk-2CSPG5QB": {
+      "file": "chunk-2CSPG5QB.js"
+    },
+    "chunk-SGLBH52P": {
+      "file": "chunk-SGLBH52P.js"
+    },
+    "chunk-32EALFBN": {
+      "file": "chunk-32EALFBN.js"
+    },
+    "chunk-G3PMV62Z": {
+      "file": "chunk-G3PMV62Z.js"
+    }
+  }
+}
